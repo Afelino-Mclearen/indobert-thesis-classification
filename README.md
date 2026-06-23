@@ -1,92 +1,92 @@
-# IndoBERT Thesis Classification
+# Analisis Perbandingan Algoritma K-Nearest Neighbor (K-NN) dan Decision Tree Berdasarkan Hasil Semantic Similarity Judul Skripsi dan Bidang Konsentrasi
 
-Semantic-Based Thesis Title Classification Using IndoBERT Embeddings: A Comparative Study of K-Nearest Neighbor and Decision Tree Algorithms.
+## Deskripsi
 
----
+Repository ini berisi implementasi penelitian skripsi yang berjudul:
 
-## Overview
+**"Analisis Perbandingan Algoritma K-Nearest Neighbor (K-NN) dan Decision Tree Berdasarkan Hasil Semantic Similarity Judul Skripsi dan Bidang Konsentrasi (Studi Kasus: Jurusan Pendidikan Teknologi Informasi dan Komunikasi)"**
 
-This repository contains the implementation of a semantic-based thesis title classification system using IndoBERT embeddings. The research aims to compare the performance of K-Nearest Neighbor (K-NN) and Decision Tree algorithms in classifying undergraduate thesis titles into predefined academic concentration fields.
-
-The proposed approach utilizes IndoBERT to generate contextual text representations, enabling the classification models to capture semantic information beyond traditional lexical features.
+Penelitian ini bertujuan untuk membandingkan performa algoritma K-Nearest Neighbor (K-NN) dan Decision Tree dalam mengklasifikasikan judul skripsi berdasarkan bidang konsentrasi menggunakan representasi semantik yang dihasilkan oleh model IndoBERT.
 
 ---
 
-## Research Objectives
+## Latar Belakang
 
-The objectives of this study are:
+Pertumbuhan jumlah dokumen skripsi yang terus meningkat setiap tahun menimbulkan tantangan dalam proses pengelolaan dan pengelompokan topik penelitian berdasarkan bidang konsentrasi.
 
-* To implement semantic text representation using IndoBERT embeddings.
-* To develop thesis title classification models using K-Nearest Neighbor (K-NN) and Decision Tree algorithms.
-* To compare the classification performance of both algorithms.
-* To evaluate model performance using Accuracy, Precision, Recall, and F1-Score metrics.
+Untuk mengatasi permasalahan tersebut, penelitian ini memanfaatkan IndoBERT sebagai metode representasi semantik sehingga informasi makna dalam judul skripsi dapat direpresentasikan dengan lebih baik sebelum dilakukan proses klasifikasi.
 
 ---
 
-## Classification Categories
+## Tujuan Penelitian
 
-The thesis titles are classified into the following concentration fields:
-
-* RPL (Rekayasa Perangkat Lunak / Software Engineering)
-* TKJ (Teknik Komputer dan Jaringan / Computer Network Engineering)
-* Multimedia
-
----
-
-## Methodology
-
-### 1. Data Collection
-
-The dataset consists of undergraduate thesis titles collected from previous academic works and categorized according to their respective concentration fields.
-
-### 2. Text Preprocessing
-
-Several preprocessing techniques are applied to improve data quality, including:
-
-* Case Folding
-* Text Cleaning
-* Normalization
-* Stopword Removal
-* Stemming
-
-### 3. Semantic Feature Extraction
-
-IndoBERT is used to transform thesis titles into dense semantic embeddings that capture contextual meaning.
-
-### 4. Classification Models
-
-The following machine learning algorithms are evaluated:
-
-* K-Nearest Neighbor (K-NN)
-* Decision Tree
-
-### 5. Performance Evaluation
-
-Model performance is evaluated using:
-
-* Accuracy
-* Precision
-* Recall
-* F1-Score
-* Confusion Matrix
+- Menganalisis perbandingan performa algoritma K-Nearest Neighbors dan Decision Tree berdasarkan representasi embedding semantik IndoBERT judul skripsi.
+- Menentukan algoritma yang menghasilkan performa terbaik dari K-Nearest Neighbor (K-NN) dan Decision Tree.
+- Membandingkan performa algoritma K-Nearest Neighbors (K-NN) dan Decision Tree terhadap model baseline TF-IDF + Logistic Regression
+- Mengevaluasi hasil klasifikasi menggunakan metrik Accuracy, Precision, Recall, dan F1-Score.
 
 ---
 
-## Technologies Used
+## Bidang Konsentrasi
 
-* Python
-* Google Colab
-* IndoBERT
-* Transformers (Hugging Face)
-* Scikit-learn
-* Pandas
-* NumPy
-* Matplotlib
-* Sastrawi
+Klasifikasi dilakukan terhadap tiga bidang konsentrasi, yaitu:
+
+- Rekayasa Perangkat Lunak (RPL)
+- Teknik Komputer dan Jaringan (TKJ)
+- Multimedia
 
 ---
 
-## Repository Structure
+## Metodologi Penelitian
+
+### 1. Pengumpulan Data
+Data penelitian berupa judul skripsi yang telah dikelompokkan berdasarkan bidang konsentrasi.
+
+### 2. Pra-pemrosesan Teks
+Tahapan preprocessing meliputi:
+
+- Case Folding
+- Text Cleaning
+- Normalisasi Teks
+- Stopword Removal
+- Stemming
+
+### 3. Representasi Semantik
+Judul skripsi diubah menjadi vektor representasi menggunakan model IndoBERT.
+
+### 4. Klasifikasi
+Algoritma yang dibandingkan:
+
+- K-Nearest Neighbor (K-NN)
+- Decision Tree
+- TF-IDF + Logistic Regression (Model Baseline)
+
+### 5. Evaluasi Model
+Evaluasi dilakukan menggunakan:
+
+- Accuracy
+- Precision
+- Recall
+- F1-Score
+- Confusion Matrix
+
+---
+
+## Teknologi yang Digunakan
+
+- Python
+- Google Colab
+- IndoBERT
+- Transformers
+- Scikit-Learn
+- Pandas
+- NumPy
+- Matplotlib
+- Sastrawi
+
+---
+
+## Struktur Repository
 
 ```text
 indobert-thesis-classification
@@ -104,63 +104,67 @@ indobert-thesis-classification
 
 ---
 
-## Installation
+## Cara Menjalankan Program
 
-Clone the repository:
+1. Clone repository ini.
 
 ```bash
 git clone https://github.com/Afelino-Mclearen/indobert-thesis-classification.git
+```
+
+2. Masuk ke folder repository.
+
+```bash
 cd indobert-thesis-classification
 ```
 
-Install dependencies:
+3. Install seluruh dependency.
 
 ```bash
 pip install -r requirements.txt
 ```
 
----
+4. Buka notebook menggunakan Google Colab atau Jupyter Notebook.
 
-## Usage
+5. Upload dataset yang digunakan.
 
-1. Open the notebook in Google Colab or Jupyter Notebook.
-2. Upload the dataset.
-3. Run all cells sequentially.
-4. Train and evaluate the classification models.
-5. Review the generated evaluation metrics and confusion matrices.
+6. Jalankan seluruh sel secara berurutan.
 
 ---
 
-## Results
+## Hasil Penelitian
 
-The study compares the performance of K-NN and Decision Tree models using IndoBERT embeddings. Performance evaluation is conducted using Accuracy, Precision, Recall, and F1-Score metrics, supported by confusion matrix analysis.
+Penelitian ini membandingkan performa algoritma K-Nearest Neighbor (K-NN) dan Decision Tree berdasarkan representasi semantic similarity yang dihasilkan oleh IndoBERT.
 
-Example results and visualizations can be found in the `results/` directory.
+Evaluasi dilakukan menggunakan metrik:
+
+- Accuracy
+- Precision
+- Recall
+- F1-Score
+
+Visualisasi hasil evaluasi dapat dilihat pada folder `results/`.
 
 ---
 
-## Dataset Availability
+## Catatan Dataset
 
-The dataset used in this study may not be publicly distributed due to academic and institutional considerations. Researchers interested in reproducing the study may use a similar thesis title dataset categorized into the specified concentration fields.
+Dataset yang digunakan dalam penelitian ini merupakan kumpulan judul skripsi yang telah diberi label berdasarkan bidang konsentrasi. Dataset tidak disertakan dalam repository ini untuk menjaga kepentingan akademik dan institusi.
 
 ---
 
-## Author
+## Penulis
 
 **Afelino Mclearen**
 
-Bachelor Thesis Project
-Department of Informatics Engineering
+Mahasiswa Program Studi Pendidikan Teknologi Informasi dan Komunikasi
 
-Research Area:
+Fakultas Teknik
 
-* Natural Language Processing (NLP)
-* Machine Learning
-* Text Classification
-* Semantic Representation Learning
+Universitas Negeri Manado
 
 ---
 
-## License
+## Lisensi
 
-This project is licensed under the MIT License. See the LICENSE file for details.
+Proyek ini menggunakan lisensi MIT License.
