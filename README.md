@@ -1,52 +1,32 @@
 # IndoBERT Thesis Classification
 
-## Overview
-
+## Description
 This repository contains the implementation of a semantic-based thesis title classification system using IndoBERT embeddings.
 
-The research compares the performance of K-Nearest Neighbor (K-NN) and Decision Tree algorithms for classifying undergraduate thesis titles into academic concentration fields.
+## Algorithms Compared
+- K-Nearest Neighbor (K-NN)
+- Decision Tree
 
-## Research Objectives
-
-- Implement semantic text representation using IndoBERT.
-- Compare K-NN and Decision Tree classification performance.
-- Evaluate classification results using Accuracy, Precision, Recall, and F1-Score.
-
-## Technologies Used
-
-- Python
-- Google Colab
-- IndoBERT
-- Scikit-learn
-- Pandas
-- NumPy
-- Matplotlib
-
-## Classification Categories
-
-- RPL (Rekayasa Perangkat Lunak)
-- TKJ (Teknik Komputer dan Jaringan)
+## Dataset Categories
+- RPL
+- TKJ
 - Multimedia
 
 ## Evaluation Metrics
-
 - Accuracy
 - Precision
 - Recall
 - F1-Score
 
-## Repository Structure
+## How to Run
 
-```text
-indobert-thesis-classification/
-│
-├── IndoBERT_Thesis_Classification.ipynb
-├── README.md
-└── requirements.txt
-```
+1. Install requirements
+2. Open notebook in Google Colab
+3. Upload dataset
+4. Run all cells
 
-## Author
+## Repository Contents
 
-Afelino Mclearen
-
-Bachelor Thesis Project – Informatics Engineering
+- IndoBERT_Thesis_Classification.ipynb
+- requirements.txt
+- LICENSE
