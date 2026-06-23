@@ -157,7 +157,7 @@ Dataset yang digunakan dalam penelitian ini merupakan kumpulan judul skripsi yan
 
 **Afelino Mclearen**
 
-Mahasiswa Program Studi Pendidikan Teknologi Informasi dan Komunikasi
+Mahasiswa Program Studi Teknik Informatika
 
 Fakultas Teknik
 
